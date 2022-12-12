@@ -8,13 +8,11 @@ void setup()
   pinMode(piezo, OUTPUT);
   pinMode(gasSensor, INPUT);
   noTone(piezo);
-  Serial.begin(9600);
+  
 }
 
 void loop()
 {
-  int valGas = analogRead(gasSensor);
-  Serial.println(valGas);
 
   if (valGas > 300)
   {
